@@ -1,41 +1,71 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineGithub } from "react-icons/ai";
+import { RxExternalLink } from "react-icons/rx";
 
-const Project = ({ title, icon, description, projectLink, gitHubLink }) => {
+const Project = (props) => {
+  const {
+    title,
+    icon,
+    image,
+    description,
+    projectLink,
+    gitHubLink,
+    techUsed,
+    index,
+  } = props;
+
+  const isEven = index % 2 !== 0;
+  console.log(Array.isArray(techUsed));
+
   return (
-    <div className="h-[max] border rounded my-4 border-neutral-500 w-[340px] hover:shadow-sm hover:shadow-teal-500 duration-500">
-      <div className="flex h-[100%]">
-        <span className="m-auto text-[50px] my-5 pt-2 justify-center h-max">
-          <a
-            className="hover:text-teal-400 duration-500"
-            href={projectLink ? projectLink : gitHubLink}
-            target="_blank"
-          >
-            {icon}
-          </a>
-        </span>
-      </div>
-      {/* text container */}
-      <div className="h-[200px]">
-        <h2 className="tracking-[2px] text-neutral-400 text-1xl py-4 font-medium text-center uppercase">
+    // container
+    <div
+      className={`flex relative h-[60vh] ${
+        isEven ? "flex-row-reverse" : "flex-row"
+      }`}
+    >
+      {/* image */}
+      <a href={projectLink} className="h-[70%] w-[70%]" target="_blank">
+        <img
+          src={image}
+          alt={title}
+          className="object-cover rounded opacity-70 hover:opacity-100 duration-500"
+        />
+      </a>
+
+      {/* header container */}
+      <div className={`mx-auto ${isEven ? "text-left" : "text-right"}`}>
+        <h3 className="font-bitter text-md text-teal-300">Project</h3>
+        {/* project title */}
+        <h2 className="uppercase tracking-wider text-gray-300 text-xl">
           {title}
         </h2>
-        <p className="text-neutral-400 text-md p-2 mx-5">{description}</p>
+      </div>
+      {/* description container */}
+
+      <div
+        className={`absolute h-auto bg-gray-800 rounded w-[50vh] p-4 px-7 top-[20%] ${
+          isEven ? "left-0" : "right-0"
+        } `}
+      >
+        {/* description */}
+        <p>{description}</p>
       </div>
 
-      {/* buttons - Go to project + GitHub link */}
-      <div className="flex justify-center gap-5 mb-5">
-        <a href={gitHubLink} target="_blank">
-          <AiOutlineGithub className="text-4xl hover:text-teal-400 duration-500" />
-        </a>
-        <div>
-          {projectLink && (
-            <a href={projectLink} target="_blank">
-              <button className="border rounded border-teal-500 p-2 font-bold hover:bg-teal-900 duration-700">
-                Access Project
-              </button>
-            </a>
-          )}
+      {/* bottom part - Technology used and links */}
+      <div className={`absolute bottom-[20%] ${isEven ? "left-5" : "right-5"}`}>
+        <div className="inline">
+          {/* {techUsed.map((tech) => {
+            return <p>{tech}</p>;
+          })} */}
+          <p className="uppercase">
+            {/* {techUsed?.map((tech) => console.log(tech))} */}
+          </p>
+        </div>
+        {/* icons */}
+        <div className="flex text-2xl mt-4">
+          <AiOutlineGithub />
+          <RxExternalLink />
         </div>
       </div>
     </div>
