@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "../../src/index.css";
 
 const Navbar = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
   return (
     <div>
-      <nav className="h-[70px] flex justify-evenly px-10 items-center">
+      <nav
+        className={`bg-[#222] ${
+          visible ? "nav active" : "nav hidden"
+        } shadow-md shadow-[#111]`}
+      >
         {/* Logo */}
         <div className="w-[50%]">
           <h2 className="">LOGO</h2>

@@ -1,6 +1,8 @@
 import React from "react";
-import Project from "./Project";
-import { bigProjects } from "../utils/constants";
+import BigProjects from "./BigProjects";
+
+import { bigProjects, smallProjects } from "../utils/constants";
+import SmallProjects from "./SmallProjects";
 
 //netflix: https://netflix-clone-8da19.web.app/
 //react cart: https://sage-dieffenbachia-472fb0.netlify.app/
@@ -26,11 +28,26 @@ const Portfolio = () => {
       {/* Big Projects */}
       <div className="flex flex-col">
         {bigProjects.map((project, index) => {
-          return <Project {...project} key={project.id} index={index} />;
+          return <BigProjects {...project} key={project.id} index={index} />;
         })}
       </div>
 
-      {/* Smaller projects */}
+      <h2 className="text-center text-2xl mb-[5vh] font-bitter">
+        Other Relevant Projects
+      </h2>
+      {/* Small Projects */}
+      <div className="flex gap-6">
+        {smallProjects.map((project, index) => {
+          return (
+            <SmallProjects
+              {...project}
+              key={project.id}
+              index={index}
+              className="h-[30vh] w-full bg-[#111] rounded p-5 cursor-pointer hover:bg-red-900"
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

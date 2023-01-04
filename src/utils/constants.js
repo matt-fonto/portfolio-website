@@ -60,7 +60,15 @@ export const bigProjects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolores tempora doloremque? Laboriosam soluta delectus voluptates architecto veritatis est nobis nihil dolorem deleniti quaerat quidem iste commodi dolorum sunt ex error ipsa, beatae perferendis atque qui placeat! Dicta veniam eveniet voluptatum nesciunt sapiente quam, blanditiis eaque, a aliquid voluptatibus dolores.",
     projectLink: "in progress",
     gitHubLink: "in progress",
-    techUsed: "React, Axios, MUI5, React Router, Netlify, Git, GitHub",
+    techUsed: [
+      "React",
+      "Axios",
+      "MUI5",
+      "React Router",
+      "Netlify",
+      "Git",
+      "GitHub",
+    ],
   },
   {
     id: "3",
@@ -71,7 +79,15 @@ export const bigProjects = [
       "A Netflix clone featuring dynamic movie and TV show listings, a main header with popular content, and rows for Netflix originals, trending shows, top-rated options, and various categories. Utilized an API to fetch and display data in real time.",
     projectLink: "https://netflix-clone-8da19.web.app/",
     gitHubLink: "https://github.com/softEngMatthew/netflix-clone",
-    techUsed: "React, Axios, MUI5, React Router, Netlify, Git, GitHub",
+    techUsed: [
+      "React",
+      "Axios",
+      "MUI5",
+      "React Router",
+      "Netlify",
+      "Git",
+      "GitHub",
+    ],
   },
 ];
 

@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <div className="h-[100vh] flex w-full justify-center items-center tracking-[2px] ">
+    <div className="h-[100vh] flex w-full justify-center items-center tracking-[2px]">
       <div className="">
         <h2 className="text-lg text-teal-300 font-openSans tracking-[2px] pt-5">
           Hi, my name is
