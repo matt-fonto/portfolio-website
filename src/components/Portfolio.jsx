@@ -11,7 +11,7 @@ import SmallProjects from "./SmallProjects";
 const Portfolio = () => {
   return (
     // Portfolio headers
-    <div className="flex-col justify-center mx-auto items-center w-[70%]">
+    <div className="flex-col justify-center mx-auto items-center w-[70%] overflow-hidden">
       <div className="flex justify-evenly items-center">
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">01.</span>Projects
@@ -20,7 +20,7 @@ const Portfolio = () => {
       </div>
 
       <div className="mb-10">
-        <h3 className="uppercase tracking-[5px] text-gray-400 text-1xl font-medium text-center py-10">
+        <h3 className="uppercase tracking-[5px] font-openSans text-gray-400 text-1xl font-medium text-center py-10">
           What I've been working on
         </h3>
       </div>
@@ -38,14 +38,7 @@ const Portfolio = () => {
       {/* Small Projects */}
       <div className="flex gap-6">
         {smallProjects.map((project, index) => {
-          return (
-            <SmallProjects
-              {...project}
-              key={project.id}
-              index={index}
-              className="h-[30vh] w-full bg-[#111] rounded p-5 cursor-pointer hover:bg-red-900"
-            />
-          );
+          return <SmallProjects {...project} key={project.id} index={index} />;
         })}
       </div>
     </div>

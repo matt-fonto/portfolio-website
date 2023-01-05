@@ -1,25 +1,159 @@
-import React from "react";
+import React, { useState } from "react";
 import Skill from "./Skill";
-import { skills } from "../utils/constants";
+import { languageSkills, librarySkills, toolsSkills } from "../utils/constants";
 
 const Skills = () => {
+  const [showName, setShowName] = useState(false);
+  const [showProgramming, setShowProgramming] = useState(false);
+  const [showFrameworks, setShowFrameworks] = useState(false);
+  const [showTools, setShowTools] = useState(false);
+
+  const onHover = (id) => {
+    setShowName(id);
+  };
+
+  const onHoverOut = (id) => {
+    setShowName(false);
+  };
+
   return (
-    // headline
-    <div className="mt-20 flex-col md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center xl:space-y-0 mx-auto items-center">
-      <h3 className="uppercase tracking-[20px] text-neutral-400 text-2xl py-4 font-medium text-center">
-        <span className="text-teal-400">Coding</span> Skills
-      </h3>
+    <div className="flex flex-col mt-20">
+      {/* Header */}
+      <div className="flex justify-evenly items-center">
+        <div className="w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
+        <h3 className="font-bitter tracking-wider text-3xl font-bold">
+          <span className="mr-2 text-teal-300">02.</span>Skills
+        </h3>
+      </div>
 
-      <h3 className="top-36 uppercase tracking-[5px] text-neutral-400 text-1xl py-10 font-medium text-center">
-        Hover to know more
-      </h3>
-      {/* ... */}
+      {/* languages */}
+      <div>
+        <div className="mb-10">
+          <h3 className="uppercase tracking-[5px] text-gray-400 text-1xl font-openSans font-medium text-left py-10">
+            <span
+              className={`${
+                showProgramming && "font-bold text-[#AB75EB] duration-500"
+              }`}
+            >
+              Programming
+            </span>{" "}
+            Languages
+          </h3>
+        </div>
+        <div className="flex text-6xl gap-4 justify-evenly items-center h-[30vh]">
+          {languageSkills.map((language) => {
+            return (
+              <div
+                className="flex flex-col items-center"
+                onMouseOver={() => setShowProgramming(true)}
+                onMouseLeave={() => setShowProgramming(false)}
+              >
+                {/* <h2>{language.name}</h2> */}
+                <span
+                  className="hover:text-[#AB75EB] hover:-translate-y-1 duration-500"
+                  onMouseOver={() => onHover(language.id)}
+                  onMouseLeave={() => onHoverOut(language.id)}
+                >
+                  {language.icon}
+                </span>
+                {/* language name - Hover */}
+                <div className="h-[60px] w-[40px] mx-auto flex justify-center">
+                  {showName === language.id && (
+                    <p className="text-sm text-gray-500 uppercase mt-4 text-center font-openSans">
+                      {language.name}
+                    </p>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
-      {/* skills container */}
-      <div className="inline-grid sm:grid-cols-3 lg:grid-cols-5 w-[100%] place-items-center gap-4">
-        {skills.map((skill) => {
-          return <Skill {...skill} key={skill.id} />;
-        })}
+      {/* Libraries & Frameworks */}
+      <div>
+        <div className="mb-10">
+          <h3 className="uppercase tracking-[5px] text-gray-400 text-1xl font-openSans font-medium text-right py-10">
+            Libraries &{" "}
+            <span
+              className={`${
+                showFrameworks && "font-bold text-[#EB7646] duration-500"
+              }`}
+            >
+              Frameworks
+            </span>
+          </h3>
+        </div>
+        <div className="flex text-6xl gap-2 justify-between items-center h-[30vh]">
+          {librarySkills.map((language) => {
+            return (
+              <div
+                className="flex flex-col items-center"
+                onMouseOver={() => setShowFrameworks(true)}
+                onMouseLeave={() => setShowFrameworks(false)}
+              >
+                <span
+                  className="hover:text-[#EB7646] hover:-translate-y-1 duration-500"
+                  onMouseOver={() => onHover(language.id)}
+                  onMouseLeave={() => onHoverOut(language.id)}
+                >
+                  {language.icon}
+                </span>
+                {/* Languages&Frameworks name - Hover */}
+                <div className="h-[60px] w-[40px] mx-auto flex justify-center">
+                  {showName === language.id && (
+                    <p className="text-sm text-gray-500 uppercase mt-4 font-openSans text-center">
+                      {language.name}
+                    </p>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* ToolSkills */}
+      <div>
+        <div className="mb-10">
+          <h3 className="uppercase tracking-[5px] text-gray-400 text-1xl font-openSans font-medium text-left py-10">
+            <span
+              className={`${
+                showTools && "font-bold text-[#EBE952] duration-500"
+              }`}
+            >
+              Tools
+            </span>{" "}
+            & Platforms
+          </h3>
+        </div>
+        <div className="flex text-6xl gap-2 justify-between items-center h-[30vh]">
+          {toolsSkills.map((language) => {
+            return (
+              <div
+                className="flex flex-col items-center"
+                onMouseOver={() => setShowTools(true)}
+                onMouseLeave={() => setShowTools(false)}
+              >
+                <span
+                  className="hover:text-[#EBE952] hover:-translate-y-1 duration-500"
+                  onMouseOver={() => onHover(language.id)}
+                  onMouseLeave={() => onHoverOut(language.id)}
+                >
+                  {language.icon}
+                </span>
+                {/* Tools&Platforms name - Hover */}
+                <div className="h-[60px] w-[40px] mx-auto flex justify-center">
+                  {showName === language.id && (
+                    <p className="text-sm text-gray-500 uppercase mt-4 font-openSans text-center">
+                      {language.name}
+                    </p>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

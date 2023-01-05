@@ -1,21 +1,29 @@
+import { AiFillYoutube } from "react-icons/ai";
+import { BsCheckCircle, BsSpotify, BsBootstrap } from "react-icons/bs";
 import {
-  AiFillYoutube,
-  AiFillCheckCircle,
-  AiFillStar,
-  AiOutlineStar,
-  AiFillHtml5,
-} from "react-icons/ai";
-import {
-  BsCheckCircle,
-  BsSpotify,
-  BsFillBootstrapFill,
-  BsBootstrap,
-} from "react-icons/bs";
-import { SiNetflix, SiRedux, SiReactrouter } from "react-icons/si";
+  SiNetflix,
+  SiRedux,
+  SiReactrouter,
+  SiExpress,
+  SiNpm,
+  SiPostman,
+  SiAndroidstudio,
+  SiNotion,
+  SiMiro,
+  SiZapier,
+  SiClickup,
+} from "react-icons/si";
 import { MdLocalGroceryStore } from "react-icons/md";
-import { DiReact, DiCss3 } from "react-icons/di";
 import {
-  SiTailwindcss,
+  DiReact,
+  DiCss3,
+  DiPython,
+  DiHtml5,
+  DiNodejs,
+  DiGit,
+  DiTrello,
+} from "react-icons/di";
+import {
   SiJavascript,
   SiMaterialui,
   SiNetlify,
@@ -24,10 +32,15 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
-import { TbBrandNextjs } from "react-icons/tb";
+import {
+  TbBrandNextjs,
+  TbBrandReactNative,
+  TbBrandTailwind,
+} from "react-icons/tb";
 import YoutubeImage from "./resources/images/youtube-clone.png";
 import NetflixImage from "./resources/images/netflix-clone.png";
 import SpotifyImage from "./resources/images/spotify-clone.png";
+import { FiFigma } from "react-icons/fi";
 
 export const bigProjects = [
   {
@@ -100,6 +113,7 @@ export const smallProjects = [
       "A cart created with the objective of practicing Redux Toolkit.",
     projectLink: "https://sage-dieffenbachia-472fb0.netlify.app/",
     gitHubLink: "https://github.com/softEngMatthew/redux-cart-project",
+    techUsed: ["React", "Axios", "MUI5", "React Router"],
   },
   {
     id: "2",
@@ -108,6 +122,7 @@ export const smallProjects = [
     description:
       "A grocery list built using React. The user can add to, edit, and delete items from the grocery list. The app stores data locally, so that the user can retrieve it after.",
     gitHubLink: "https://github.com/softEngMatthew/grocery-list",
+    techUsed: ["React", "Axios", "MUI5", "React Router"],
   },
   {
     id: "3",
@@ -116,179 +131,152 @@ export const smallProjects = [
     description:
       "A pretty straightforward To-Do app created with React Native and Expo.",
     gitHubLink: "https://github.com/softEngMatthew/to-do-app-react-native",
+    techUsed: ["React", "Axios", "MUI5", "React Router"],
   },
 ];
 
-export const skills = [
+export const languageSkills = [
+  {
+    id: "js",
+    icon: <SiJavascript />,
+    name: "JavaScript (ES6)",
+  },
+  {
+    id: "ts",
+    icon: <SiTypescript />,
+    name: "TypeScript",
+  },
+  {
+    id: "py",
+    icon: <DiPython />,
+    name: "Python",
+  },
+  {
+    id: "html",
+    icon: <DiHtml5 />,
+    name: "HTML",
+  },
+  {
+    id: "css",
+    icon: <DiCss3 />,
+    name: "CSS",
+  },
+];
+
+export const librarySkills = [
+  {
+    id: "re",
+    icon: <DiReact />,
+    name: "React",
+  },
+  {
+    id: "no",
+    icon: <DiNodejs />,
+    name: "Node.js",
+  },
+  {
+    id: "ex",
+    icon: <SiExpress />,
+    name: "Express.js",
+  },
+  {
+    id: "rena",
+    icon: <TbBrandReactNative />,
+    name: "React Native",
+  },
+  {
+    id: "ne",
+    icon: <SiNextdotjs />,
+    name: "Next.js",
+  },
+  {
+    id: "red",
+    icon: <SiRedux />,
+    name: "Redux",
+  },
+  {
+    id: "rou",
+    icon: <SiReactrouter />,
+    name: "React Router",
+  },
+  {
+    id: "tail",
+    icon: <TbBrandTailwind />,
+    name: "Tailwind",
+  },
+  {
+    id: "boot",
+    icon: <BsBootstrap />,
+    name: "Boostrap",
+  },
+  {
+    id: "mui",
+    icon: <SiMaterialui />,
+    name: "MUI5",
+  },
+];
+
+export const toolsSkills = [
   {
     id: "1",
-    title: "React",
-    icon: <DiReact />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <DiGit />,
+    name: "Git",
   },
   {
     id: "2",
-    title: "JavaScript",
-    icon: <SiJavascript />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-    ],
+    icon: <SiNpm />,
+    name: "NPM",
   },
   {
     id: "3",
-    title: "Typescript",
-    icon: <SiTypescript />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <SiFirebase />,
+    name: "Firebase",
   },
   {
     id: "4",
-    title: "Node.js",
-    icon: <IoLogoNodejs />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <SiNetlify />,
+    name: "Netlify",
   },
   {
     id: "5",
-    title: "Next.js",
-    icon: <SiNextdotjs />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-      <AiOutlineStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <SiPostman />,
+    name: "Postman",
   },
   {
     id: "6",
-    title: "Tailwind",
-    icon: <SiTailwindcss />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <SiAndroidstudio />,
+    name: "Android Studio",
   },
   {
     id: "7",
-    title: "HTML",
-    icon: <AiFillHtml5 />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-    ],
+    icon: <SiNotion />,
+    name: "Notion",
   },
   {
     id: "8",
-    title: "CSS",
-    icon: <DiCss3 />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <DiTrello />,
+    name: "Trello",
   },
   {
     id: "9",
-    title: "Redux",
-    icon: <SiRedux />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <SiMiro />,
+    name: "Miro",
   },
   {
     id: "10",
-    title: "Firebase",
-    icon: <SiFirebase />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <FiFigma />,
+    name: "Figma",
   },
   {
     id: "11",
-    title: "MUI5",
-    icon: <SiMaterialui />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <SiZapier />,
+    name: "Zapier",
   },
   {
     id: "12",
-    title: "Netlify",
-    icon: <SiNetlify />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiOutlineStar />,
-    ],
+    icon: <SiClickup />,
+    name: "ClickUp",
   },
-  {
-    id: "13",
-    title: "Boostrap",
-    icon: <BsBootstrap />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-    ],
-  },
-  {
-    id: "14",
-    title: "React Router",
-    icon: <SiReactrouter />,
-    skillLevel: [
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-      <AiFillStar />,
-    ],
-  },
-  // Add POSTMAN
 ];
 
 export const about = [];

@@ -16,7 +16,7 @@ export default function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1);
   }, []);
 
   return (
@@ -32,9 +32,9 @@ export default function Home() {
         // * whole screen container
         <main className="text-zinc-100">
           <Navbar />
-          <FixedMenus />
+          {/* <FixedMenus /> */}
           {/* content */}
-          <div className="mx-[20vh] z-50">
+          <div className="mx-[20vh]">
             <Header />
             <Portfolio />
             <Skills />
