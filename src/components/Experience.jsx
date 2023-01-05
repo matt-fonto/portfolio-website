@@ -1,6 +1,7 @@
 import React from "react";
 import pic from "../utils/resources/images/mypic.jpeg";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import ExperienceTabs from "./ExperienceTabs";
 
 const Experience = () => {
   return (
@@ -13,7 +14,10 @@ const Experience = () => {
         <div className="w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
       </div>
 
-      {/* content */}
+      {/* Tabs */}
+      <div>
+        <ExperienceTabs />
+      </div>
     </div>
   );
 };

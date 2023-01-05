@@ -83,7 +83,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <button className="border rounded border-teal-400 h-8 w-[70px] font-bold hover:bg-teal-900 hover:scale-105 duration-500 ml-5">
+              <button className="border rounded border-teal-400 h-8 w-[70px] font-bold hover:scale-105 duration-500 ml-5">
                 Resume
               </button>
             </li>
