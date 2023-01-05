@@ -18,7 +18,7 @@ const BigProjects = (props) => {
 
   return (
     // section container
-    <div className="flex flex-col scroll-smooth">
+    <div className="flex flex-col scroll-smooth h-[70vh]">
       {/* header container */}
       <div className={`${isEven ? "text-left" : "text-right"}`}>
         <h3 className="font-bitter text-md text-teal-300">Project</h3>
@@ -35,17 +35,17 @@ const BigProjects = (props) => {
         }`}
       >
         {/* image */}
-        <a href={projectLink} className="h-[70%] w-[70%]" target="_blank">
+        <a href={projectLink} target="_blank">
           <img
             src={image}
             alt={title}
-            className="object-cover rounded opacity-50 hover:opacity-100 hover:-translate-y-2 duration-500"
+            className="h-[50vh] w-full object-cover rounded opacity-50 hover:opacity-100 hover:-translate-y-2 duration-500"
           />
         </a>
 
         {/* description container */}
         <div
-          className={`absolute h-auto bg-gray-800 rounded w-[55vh] p-4 px-7 top-[5vh] ${
+          className={`absolute h-max bg-[#2a2929] rounded w-[70vh] p-4 px-7 top-2 ${
             isEven ? "left-0" : "right-0"
           } `}
         >
@@ -56,19 +56,16 @@ const BigProjects = (props) => {
         </div>
 
         {/* bottom part - Technology used and links */}
-        <div
-          className={`absolute bottom-[10vh] ${isEven ? "left-0" : "right-0"}`}
-        >
+        <div className={`absolute bottom-16 ${isEven ? "left-0" : "right-0"}`}>
           <div className="flex">
             {techUsed.map((item) => {
               return (
-                <p className="font-bitter uppercase text-teal-300 px-1">
+                <p className="font-openSans text-base text-gray-400 px-1">
                   {item}
                 </p>
               );
             })}
           </div>
-          {/* <p className="uppercase font-bitter">{techUsed?.map(tech)=}</p> */}
 
           {/* icons */}
           <div

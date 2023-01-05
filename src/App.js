@@ -34,7 +34,7 @@ export default function Home() {
           <Navbar />
           {/* <FixedMenus /> */}
           {/* content */}
-          <div className="mx-[20vh]">
+          <div className="mx-[200px]">
             <Header />
             <Portfolio />
             <Skills />

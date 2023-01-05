@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       bitter: ["bitter", "serif"],
       openSans: ["openSans", "sans-serif"],
+      robotoSlab: ["robotoSlab", "serif"],
     },
     extend: {},
   },

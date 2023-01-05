@@ -11,7 +11,8 @@ import SmallProjects from "./SmallProjects";
 const Portfolio = () => {
   return (
     // Portfolio headers
-    <div className="flex-col justify-center mx-auto items-center w-[70%] overflow-hidden">
+    <div className="flex-col justify-center mx-auto items-center overflow-hidden">
+      {/* Headline */}
       <div className="flex justify-evenly items-center">
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">01.</span>Projects
@@ -19,6 +20,7 @@ const Portfolio = () => {
         <div className="w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
       </div>
 
+      {/* Subheadline */}
       <div className="mb-10">
         <h3 className="uppercase tracking-[5px] font-openSans text-gray-400 text-1xl font-medium text-center py-10">
           What I've been working on

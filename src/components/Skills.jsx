@@ -27,8 +27,9 @@ const Skills = () => {
       </div>
 
       {/* languages */}
-      <div>
-        <div className="mb-10">
+      <div className="relative">
+        <div className="mb-10 ">
+          <div className="absolute w-[60px] h-[2px] bg-[#AB75EB] ml-4 -left-4 top-20 " />
           <h3 className="uppercase tracking-[5px] text-gray-400 text-1xl font-openSans font-medium text-left py-10">
             <span
               className={`${
@@ -71,8 +72,9 @@ const Skills = () => {
       </div>
 
       {/* Libraries & Frameworks */}
-      <div>
+      <div className="relative">
         <div className="mb-10">
+          <div className="absolute w-[60px] h-[2px] bg-[#EB7646] ml-4 -right-0 top-20 " />
           <h3 className="uppercase tracking-[5px] text-gray-400 text-1xl font-openSans font-medium text-right py-10">
             Libraries &{" "}
             <span
@@ -114,8 +116,9 @@ const Skills = () => {
       </div>
 
       {/* ToolSkills */}
-      <div>
+      <div className="relative">
         <div className="mb-10">
+          <div className="absolute w-[60px] h-[2px] bg-[#EBE952] ml-4 -left-4 top-20 " />
           <h3 className="uppercase tracking-[5px] text-gray-400 text-1xl font-openSans font-medium text-left py-10">
             <span
               className={`${
