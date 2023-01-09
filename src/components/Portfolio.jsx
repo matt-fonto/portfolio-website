@@ -1,6 +1,5 @@
 import React from "react";
 import BigProjects from "./BigProjects";
-
 import { bigProjects, smallProjects } from "../utils/constants";
 import SmallProjects from "./SmallProjects";
 
@@ -8,7 +7,7 @@ import SmallProjects from "./SmallProjects";
 //react cart: https://sage-dieffenbachia-472fb0.netlify.app/
 //youtube: https://enchanting-sopapillas-14f13d.netlify.app/
 
-const Portfolio = () => {
+const Portfolio = ({ animationType }) => {
   return (
     // Portfolio headers
     <div
@@ -24,7 +23,7 @@ const Portfolio = () => {
       </div>
 
       {/* Subheadline */}
-      <div className="mb-10">
+      <div className="mb-10" data-aos="fade-up">
         <h3 className="uppercase tracking-[5px] font-openSans text-gray-400 text-1xl font-medium text-center py-10">
           What I've been working on
         </h3>
@@ -33,7 +32,11 @@ const Portfolio = () => {
       {/* Big Projects */}
       <div className="flex flex-col">
         {bigProjects.map((project, index) => {
-          return <BigProjects {...project} key={project.id} index={index} />;
+          return (
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+              <BigProjects {...project} key={project.id} index={index} />
+            </div>
+          );
         })}
       </div>
 

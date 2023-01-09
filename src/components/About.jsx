@@ -16,7 +16,7 @@ const About = () => {
       {/* Container Content + Picture */}
       <div className="flex h-max items-start">
         {/* content */}
-        <div className="flex flex-col gap-y-4 w-1/2">
+        <div className="flex flex-col gap-y-4 w-1/2" data-aos="fade-up">
           {/* text */}
           <p className="text-md font-openSans text-gray-400">
             Hey, there!
@@ -91,7 +91,6 @@ const About = () => {
                 alt=""
                 className="rounded-lg h-[250px] grayscale-[40%] hover:grayscale-0 duration-500 "
               />
-              {/* <div className="absolute inset-0 bg-teal-300 h-[250px] w-2" /> */}
             </a>
           </div>
         </div>

@@ -23,6 +23,7 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   });
+
   return (
     <div>
       <nav
@@ -36,7 +37,7 @@ const Navbar = () => {
         </div>
 
         {/* Links */}
-        <div className="flex">
+        <div className="flex" data-aos="fade-left">
           <ul className="flex gap-4 text-sm font-bitter tracking-wider items-center">
             <li>
               <span className="font-bitter pr-1 text-teal-300">01.</span>
@@ -115,7 +116,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <button className="border rounded border-teal-400 h-8 w-[70px] font-bold hover:scale-105 duration-500 ml-5">
+              <button className="border rounded border-teal-400 h-[40px] w-[80px] font-bold hover:scale-105 duration-500 ml-5 text-gray-300">
                 Resume
               </button>
             </li>

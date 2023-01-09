@@ -9,15 +9,21 @@ import { RingLoader } from "react-spinners";
 import { useEffect, useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-export default function Home() {
+export default function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1);
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
   }, []);
 
   const sendEmail = () => {
@@ -37,11 +43,11 @@ export default function Home() {
         />
       ) : (
         // * whole screen container
-        <main className="text-teal-100">
+        <main>
           <Navbar />
           {/* <FixedMenus /> */}
           {/* content */}
-          <div className="mx-[300px]">
+          <div className="mx-[300px] text-gray-400 text-openSans">
             <Hero sendEmail={sendEmail} />
             <Portfolio />
             <Skills />

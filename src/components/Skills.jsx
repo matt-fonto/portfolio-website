@@ -47,6 +47,7 @@ const Skills = () => {
                 className="flex flex-col items-center"
                 onMouseOver={() => setShowProgramming(true)}
                 onMouseLeave={() => setShowProgramming(false)}
+                data-aos="fade-up"
               >
                 {/* <h2>{language.name}</h2> */}
                 <span
@@ -92,6 +93,7 @@ const Skills = () => {
                 className="flex flex-col items-center"
                 onMouseOver={() => setShowFrameworks(true)}
                 onMouseLeave={() => setShowFrameworks(false)}
+                data-aos="fade-up"
               >
                 <span
                   className="hover:text-[#EB7646] hover:-translate-y-1 duration-500"
@@ -136,6 +138,7 @@ const Skills = () => {
                 className="flex flex-col items-center"
                 onMouseOver={() => setShowTools(true)}
                 onMouseLeave={() => setShowTools(false)}
+                data-aos="fade-up"
               >
                 <span
                   className="hover:text-[#EBE952] hover:-translate-y-1 duration-500"

@@ -17,12 +17,14 @@ const Contact = ({ sendEmail }) => {
       <h2 className="text-4xl font-bitter text-teal-300 font-bold">
         Get in Touch
       </h2>
-      <p className="font-openSans text-gray-400 text-center mx-[200px]">
-        Let's make a winning team. Contact me now to learn more about my
-        experience and how I can contribute to your company's success.
-      </p>
+      <div data-aos="fade-up">
+        <p className="font-openSans text-gray-400 text-center mx-[200px]">
+          Let's make a winning team. Contact me now to learn more about my
+          experience and how I can contribute to your company's success.
+        </p>
+      </div>
 
-      <div>
+      <div data-aos="fade-up">
         <button
           className="mt-10 border rounded border-teal-400 h-[7vh] w-[20vh] font-bold font-bitter hover:scale-105 duration-500"
           onClick={sendEmail}

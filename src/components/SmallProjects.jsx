@@ -6,7 +6,10 @@ import { RxExternalLink } from "react-icons/rx";
 const SmallProjects = ({ description, gitHubLink, title, techUsed }) => {
   return (
     //   {/*container folders */}
-    <div className="h-[300px] w-[700px] bg-[#2a2929]  rounded p-5 cursor-pointer hover:-translate-y-2 duration-500 relative">
+    <div
+      className="h-[300px] w-[700px] bg-[#2a2929]  rounded p-5 cursor-pointer hover:-translate-y-2 duration-500 relative"
+      data-aos="fade-up"
+    >
       {/* upper container - links */}
       <div className="flex justify-between items-center mb-4">
         <AiOutlineFolderOpen className="text-3xl text-teal-300" />
@@ -18,7 +21,7 @@ const SmallProjects = ({ description, gitHubLink, title, techUsed }) => {
 
       {/* description container */}
       <div>
-        <h2 className="font-bitter text-gray-200 font-bold text-xl mb-2">
+        <h2 className="font-bitter text-gray-300 font-bold text-xl mb-2">
           {title}
         </h2>
         <p className="font-openSans text-gray-400 font-md">{description}</p>

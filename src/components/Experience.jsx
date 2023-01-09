@@ -15,7 +15,7 @@ const Experience = () => {
       </div>
 
       {/* Tabs */}
-      <div>
+      <div data-aos="fade-up">
         <ExperienceTabs />
       </div>
     </div>
