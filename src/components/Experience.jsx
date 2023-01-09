@@ -5,7 +5,7 @@ import ExperienceTabs from "./ExperienceTabs";
 
 const Experience = () => {
   return (
-    <div>
+    <div id="experience">
       {/* Headline */}
       <div className="flex justify-evenly items-center">
         <h3 className="font-bitter tracking-wider text-3xl font-bold">

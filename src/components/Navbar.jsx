@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../src/index.css";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -30,7 +31,7 @@ const Navbar = () => {
         } shadow-md shadow-[#111]`}
       >
         {/* Logo */}
-        <div className="w-[50%]">
+        <div className="w-1/2">
           <h2 className="">LOGO</h2>
         </div>
 
@@ -39,48 +40,79 @@ const Navbar = () => {
           <ul className="flex gap-4 text-sm font-bitter tracking-wider items-center">
             <li>
               <span className="font-bitter pr-1 text-teal-300">01.</span>
-              <a
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
+              >
+                Projects
+              </Link>
+              {/* <a
                 href=""
                 className="font-openSans text-gray-200 hover:text-teal-300 duration-500"
               >
                 Projects
-              </a>
+              </a> */}
             </li>
             <li>
               <span className="font-bitter pr-1 text-teal-300">02.</span>
-              <a
-                href=""
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500"
+              <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
               >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
               <span className="font-bitter pr-1 text-teal-300">03.</span>
-              <a
-                href=""
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500"
+              <Link
+                activeClass="active"
+                to="experience"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
               >
                 Experience
-              </a>
+              </Link>
             </li>
             <li>
               <span className="font-bitter pr-1 text-teal-300">04.</span>
-              <a
-                href=""
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500"
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
               <span className="font-bitter pr-1 text-teal-300">05.</span>
-              <a
-                href=""
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500"
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
               >
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
               <button className="border rounded border-teal-400 h-8 w-[70px] font-bold hover:scale-105 duration-500 ml-5">

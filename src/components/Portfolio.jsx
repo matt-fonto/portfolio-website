@@ -11,7 +11,10 @@ import SmallProjects from "./SmallProjects";
 const Portfolio = () => {
   return (
     // Portfolio headers
-    <div className="flex-col justify-center mx-auto items-center overflow-hidden">
+    <div
+      className="flex-col justify-center mx-auto items-center overflow-hidden"
+      id="projects"
+    >
       {/* Headline */}
       <div className="flex justify-evenly items-center">
         <h3 className="font-bitter tracking-wider text-3xl font-bold">

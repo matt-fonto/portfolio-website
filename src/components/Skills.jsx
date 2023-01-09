@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Skill from "./Skill";
 import { languageSkills, librarySkills, toolsSkills } from "../utils/constants";
 
 const Skills = () => {
@@ -17,7 +16,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="flex flex-col mt-20">
+    <div className="flex flex-col mt-20" id="skills">
       {/* Header */}
       <div className="flex justify-evenly items-center">
         <div className="w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
@@ -60,7 +59,7 @@ const Skills = () => {
                 {/* language name - Hover */}
                 <div className="h-[60px] w-[40px] mx-auto flex justify-center">
                   {showName === language.id && (
-                    <p className="text-sm text-gray-500 uppercase mt-4 text-center font-openSans">
+                    <p className="text-sm text-gray-500 tracking-[2px] uppercase mt-4 text-center font-openSans">
                       {language.name}
                     </p>
                   )}
@@ -87,7 +86,7 @@ const Skills = () => {
           </h3>
         </div>
         <div className="flex text-6xl gap-2 justify-between items-center h-[30vh]">
-          {librarySkills.map((language) => {
+          {librarySkills.map((item) => {
             return (
               <div
                 className="flex flex-col items-center"
@@ -96,16 +95,16 @@ const Skills = () => {
               >
                 <span
                   className="hover:text-[#EB7646] hover:-translate-y-1 duration-500"
-                  onMouseOver={() => onHover(language.id)}
-                  onMouseLeave={() => onHoverOut(language.id)}
+                  onMouseOver={() => onHover(item.id)}
+                  onMouseLeave={() => onHoverOut(item.id)}
                 >
-                  {language.icon}
+                  {item.icon}
                 </span>
-                {/* Languages&Frameworks name - Hover */}
+                {/* Libraries&Frameworks name - Hover */}
                 <div className="h-[60px] w-[40px] mx-auto flex justify-center">
-                  {showName === language.id && (
-                    <p className="text-sm text-gray-500 uppercase mt-4 font-openSans text-center">
-                      {language.name}
+                  {showName === item.id && (
+                    <p className="text-sm text-gray-500 uppercase tracking-[2px] mt-4 font-openSans text-center">
+                      {item.name}
                     </p>
                   )}
                 </div>
@@ -131,7 +130,7 @@ const Skills = () => {
           </h3>
         </div>
         <div className="flex text-6xl gap-2 justify-between items-center h-[30vh]">
-          {toolsSkills.map((language) => {
+          {toolsSkills.map((tool) => {
             return (
               <div
                 className="flex flex-col items-center"
@@ -140,16 +139,16 @@ const Skills = () => {
               >
                 <span
                   className="hover:text-[#EBE952] hover:-translate-y-1 duration-500"
-                  onMouseOver={() => onHover(language.id)}
-                  onMouseLeave={() => onHoverOut(language.id)}
+                  onMouseOver={() => onHover(tool.id)}
+                  onMouseLeave={() => onHoverOut(tool.id)}
                 >
-                  {language.icon}
+                  {tool.icon}
                 </span>
                 {/* Tools&Platforms name - Hover */}
                 <div className="h-[60px] w-[40px] mx-auto flex justify-center">
-                  {showName === language.id && (
-                    <p className="text-sm text-gray-500 uppercase mt-4 font-openSans text-center">
-                      {language.name}
+                  {showName === tool.id && (
+                    <p className="text-sm text-gray-500 uppercase tracking-[2px] mt-4 font-openSans text-center">
+                      {tool.name}
                     </p>
                   )}
                 </div>

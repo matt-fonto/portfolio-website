@@ -1,111 +1,98 @@
 import React from "react";
+import { BiRightArrow } from "react-icons/bi";
+import MyPic from "../utils/resources/images/mypic.jpeg";
 
 const About = () => {
   return (
-    <div className="mx-10 mt-10">
-      <h3 className="uppercase tracking-[20px] text-neutral-400 text-2xl py-4 font-medium text-center">
-        <span className="text-teal-400">Life</span> XP
-      </h3>
+    <div className="flex flex-col gap-y-4" id="about">
+      {/* // Header */}
+      <div className="flex justify-evenly items-center">
+        <div className="w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
+        <h3 className="font-bitter tracking-wider text-3xl font-bold">
+          <span className="mr-2 text-teal-300">04.</span>About Me
+        </h3>
+      </div>
 
-      {/* image and about */}
-      <div className="flex justify-center mt-5">
-        {/* right */}
-        <div className="w-[100%]">
-          <img
-            src={pic}
-            alt="picture"
-            className="rounded-full w-80 h-80 object-cover mx-auto"
-          />
-        </div>
-        {/* left */}
-        <div className="">
-          <p className="mx-auto">
-            I am a lifelong learner who has founded his own English academy and
-            managed his own team, yet decided to pursue a life-long passion for
-            computer science, software development, and coding. I’m a highly
-            driven and focused individual, who seeks to help people and society,
-            be it through education, be it through technological solutions.
+      {/* Container Content + Picture */}
+      <div className="flex h-max items-start">
+        {/* content */}
+        <div className="flex flex-col gap-y-4 w-1/2">
+          {/* text */}
+          <p className="text-md font-openSans text-gray-400">
+            Hey, there!
+            <br />
+            <br />
+            I'm an educator turning software engineer, currently doing a
+            computer science degree. With my strong discipline, determination,
+            and attention to detail, I bring a unique perspective and efficient
+            work ethic to the table.
+            <br />
+            <br />
+            I'm a fast learner and thrive in collaborative environments. I'm
+            also highly organized, resourceful, and competent in my work. I have
+            built my own business from the ground up, where I managed a team and
+            developed strategical, marketing, and administrative processes.
+            <br />
+            <br />
+            Most importantly, I'm passionate about what I do and am driven to
+            succeed. Together, we can accomplish anything! Let's create
+            something great.
+            <br />
+            <br />
+            Here are a few technologies and concepts that I've been studying
+            recently:
           </p>
-          {/* other skills */}
-          <div className="flex gap-5 mt-5">
-            {/* professional skills */}
-            <div className="h-[max] border rounded my-4 border-neutral-500 w-[50%] p-4 hover:shadow-sm">
-              <h2 className="uppercase tracking-[4px] text-neutral-400 text-md py-4 text-center">
-                Professional Skills
-              </h2>
+          <div>
+            {/* tech */}
+            <div className="flex my-4">
+              {/* Column 1 */}
+              <ul className="w-1/2">
+                <li className="flex items-center gap-2">
+                  <BiRightArrow className="text-xs text-teal-300" />
+                  <p className="text-gray-400 font-bitter">
+                    Data Structures and Algorithms
+                  </p>
+                </li>
+                <li className="flex items-center gap-2">
+                  <BiRightArrow className="text-xs text-teal-300" />
+                  <p className="text-gray-400 font-bitter">GraphQL</p>
+                </li>
+                <li className="flex items-center gap-2">
+                  <BiRightArrow className="text-xs text-teal-300" />
+                  <p className="text-gray-400 font-bitter">NestJS</p>
+                </li>
+              </ul>
 
-              <ul>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Teaching
+              {/* Column 2 */}
+              <ul className="w-1/2">
+                <li className="flex items-center gap-2">
+                  <BiRightArrow className="text-xs text-teal-300" />
+                  <p className="text-gray-400 font-bitter">REST APIs</p>
                 </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Team Management
+                <li className="flex items-center gap-2">
+                  <BiRightArrow className="text-xs text-teal-300" />
+                  <p className="text-gray-400 font-bitter">SQL</p>
                 </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Knowledge Engineering
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Academic Writing
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Web Copyright
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Blog Writing
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Content Production
+                <li className="flex items-center gap-2">
+                  <BiRightArrow className="text-xs text-teal-300" />
+                  <p className="text-gray-400 font-bitter">Sanity</p>
                 </li>
               </ul>
             </div>
-            {/* soft skills */}
-            <div className="h-[max] border rounded my-4 border-neutral-500 w-[50%] p-4 hover:shadow-sm">
-              <h2 className="uppercase tracking-[4px] text-neutral-400 text-md py-4 text-center">
-                Soft Skills
-              </h2>
+          </div>
+        </div>
 
-              <ul>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Excellent verbal and written communication
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Highly effective in time management
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Adaptable
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Great listening skills
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Problem-solver
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Communicative
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Highly focused
-                </li>
-                <li className="flex items-center gap-1">
-                  <IoIosArrowDroprightCircle />
-                  Autonomous
-                </li>
-              </ul>
-            </div>
+        {/* picture */}
+        <div className="flex justify-center h-[350px] items-center w-1/2">
+          <div className="image-with-background relative">
+            <a href="https://github.com/softEngMatthew" target="_blank">
+              <img
+                src={MyPic}
+                alt=""
+                className="rounded-lg h-[250px] grayscale-[40%] hover:grayscale-0 duration-500 "
+              />
+              {/* <div className="absolute inset-0 bg-teal-300 h-[250px] w-2" /> */}
+            </a>
           </div>
         </div>
       </div>

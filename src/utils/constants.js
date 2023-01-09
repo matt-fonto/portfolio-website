@@ -137,9 +137,9 @@ export const smallProjects = [
 
 export const languageSkills = [
   {
-    id: "js",
-    icon: <SiJavascript />,
-    name: "JavaScript (ES6)",
+    id: "py",
+    icon: <DiPython />,
+    name: "Python",
   },
   {
     id: "ts",
@@ -147,10 +147,11 @@ export const languageSkills = [
     name: "TypeScript",
   },
   {
-    id: "py",
-    icon: <DiPython />,
-    name: "Python",
+    id: "js",
+    icon: <SiJavascript />,
+    name: "JavaScript (ES6)",
   },
+
   {
     id: "html",
     icon: <DiHtml5 />,
