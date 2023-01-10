@@ -42,6 +42,35 @@ import NetflixImage from "./resources/images/netflix-clone.png";
 import SpotifyImage from "./resources/images/spotify-clone.png";
 import { FiFigma } from "react-icons/fi";
 
+// navlinks
+export const navlinks = [
+  {
+    num: 1,
+    name: "Projects",
+    to: "projects",
+  },
+  {
+    num: 2,
+    name: "Skills",
+    to: "skills",
+  },
+  {
+    num: 3,
+    name: "Experience",
+    to: "skills",
+  },
+  {
+    num: 4,
+    name: "About",
+    to: "about",
+  },
+  {
+    num: 5,
+    name: "Contact",
+    to: "contact",
+  },
+];
+
 export const bigProjects = [
   {
     id: "1",
@@ -279,7 +308,3 @@ export const toolsSkills = [
     name: "ClickUp",
   },
 ];
-
-export const about = [];
-
-export const contact = [];

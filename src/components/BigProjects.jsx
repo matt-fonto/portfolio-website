@@ -57,10 +57,10 @@ const BigProjects = (props) => {
 
         {/* bottom part - Technology used and links */}
         <div className={`absolute bottom-16 ${isEven ? "left-0" : "right-0"}`}>
-          <div className="flex">
+          <div className="flex gap-x-2">
             {techUsed.map((item) => {
               return (
-                <p className="font-openSans text-base text-gray-400 px-1">
+                <p className="text-[#222] bg-gray-400 lowercase font-bitter rounded h-6 w-max p-2 text-sm flex items-center">
                   {item}
                 </p>
               );

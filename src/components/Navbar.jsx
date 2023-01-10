@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "../../src/index.css";
-import { Link } from "react-scroll";
+
+import { HiOutlineCode } from "react-icons/hi";
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
+  // function to calculate the scroll
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
@@ -18,6 +21,7 @@ const Navbar = () => {
     setPrevScrollPos(currentScrollPos);
   };
 
+  // useEffect to measure the scroll
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -27,100 +31,18 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`bg-[#222] ${
-          visible ? "nav active" : "nav hidden"
-        } shadow-md shadow-[#111]`}
+        className={`md:flex md:items-center ${visible ? "nav" : "nav hidden"}`}
       >
         {/* Logo */}
-        <div className="w-1/2">
-          <h2 className="">LOGO</h2>
+        <div className="w-1/2 text-2xl text-teal-300">
+          <a href="/">
+            <HiOutlineCode />
+          </a>
         </div>
 
         {/* Links */}
-        <div className="flex" data-aos="fade-left">
-          <ul className="flex gap-4 text-sm font-bitter tracking-wider items-center">
-            <li>
-              <span className="font-bitter pr-1 text-teal-300">01.</span>
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
-              >
-                Projects
-              </Link>
-              {/* <a
-                href=""
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500"
-              >
-                Projects
-              </a> */}
-            </li>
-            <li>
-              <span className="font-bitter pr-1 text-teal-300">02.</span>
-              <Link
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
-              >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <span className="font-bitter pr-1 text-teal-300">03.</span>
-              <Link
-                activeClass="active"
-                to="experience"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
-              >
-                Experience
-              </Link>
-            </li>
-            <li>
-              <span className="font-bitter pr-1 text-teal-300">04.</span>
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <span className="font-bitter pr-1 text-teal-300">05.</span>
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                className="font-openSans text-gray-200 hover:text-teal-300 duration-500 cursor-pointer"
-              >
-                Contact
-              </Link>
-            </li>
-            <li>
-              <button className="border rounded border-teal-400 h-[40px] w-[80px] font-bold hover:scale-105 duration-500 ml-5 text-gray-300">
-                Resume
-              </button>
-            </li>
-          </ul>
+        <div>
+          <Sidebar />
         </div>
       </nav>
     </div>
