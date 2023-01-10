@@ -7,8 +7,8 @@ const SmallProjects = ({ description, gitHubLink, title, techUsed }) => {
   return (
     //   {/*container folders */}
     <div
-      className="h-[300px] w-[700px] bg-[#2a2929]  rounded p-5 cursor-pointer hover:-translate-y-2 duration-500 relative"
-      data-aos="fade-up"
+      className="h-[300px] w-[700px] bg-[#2a2929] rounded p-5 hover:translate-y-1 duration-500 relative"
+      // data-aos="fade-up"
     >
       {/* upper container - links */}
       <div className="flex justify-between items-center mb-4">

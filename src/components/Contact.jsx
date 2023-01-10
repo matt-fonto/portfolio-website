@@ -3,11 +3,11 @@ import React from "react";
 const Contact = ({ sendEmail }) => {
   return (
     <div
-      className="flex flex-col justify-center items-center h-[80vh] gap-y-4"
+      className="flex flex-col justify-center items-center h-[80vh] gap-y-[40px]"
       id="contact"
     >
       {/* // Header */}
-      <div className="flex justify-evenly items-center mb-8">
+      <div className="flex justify-evenly items-center">
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">05.</span>What's Next?
         </h3>
@@ -26,7 +26,7 @@ const Contact = ({ sendEmail }) => {
 
       <div data-aos="fade-up">
         <button
-          className="mt-10 border rounded border-teal-400 h-[7vh] w-[20vh] font-bold font-bitter hover:scale-105 duration-500"
+          className="border rounded border-teal-400 h-[7vh] w-[20vh] font-bold font-bitter hover:scale-105 duration-500"
           onClick={sendEmail}
         >
           Say Hello

@@ -45,7 +45,7 @@ export default function App() {
         // * whole screen container
         <main>
           <Navbar />
-          {/* <FixedMenus /> */}
+          <FixedMenus sendEmail={sendEmail} />
           {/* content */}
           <div className="mx-[300px] text-gray-400 text-openSans">
             <Hero sendEmail={sendEmail} />
