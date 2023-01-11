@@ -2,20 +2,42 @@ import React from "react";
 import { AiOutlineFolderOpen } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { RxExternalLink } from "react-icons/rx";
+import { smallProjects } from "../utils/constants";
 
-const SmallProjects = ({ description, gitHubLink, title, techUsed }) => {
+const SmallProjects = ({
+  description,
+  gitHubLink,
+  title,
+  techUsed,
+  projectLink,
+}) => {
   return (
     //   {/*container folders */}
     <div
-      className="h-[300px] w-[700px] bg-[#2a2929] rounded p-5 duration-500 relative"
-      // data-aos="fade-up"
+      className="h-[300px] w-[700px] bg-[#2a2929] rounded shadow-md p-5 duration-500 relative"
+      data-aos="fade-up"
     >
       {/* upper container - links */}
       <div className="flex justify-between items-center mb-4">
-        <AiOutlineFolderOpen className="text-3xl text-teal-300" />
+        {projectLink ? (
+          <a href={projectLink} target="_blank">
+            <AiOutlineFolderOpen className="text-3xl text-teal-300 hover:-translate-y-1 duration-500" />
+          </a>
+        ) : (
+          <a href={gitHubLink} target="_blank">
+            <AiOutlineFolderOpen className="text-3xl text-teal-300 hover:-translate-y-1 duration-500" />
+          </a>
+        )}
+
         <div className="flex justify-between text-2xl gap-2">
-          <AiOutlineGithub className="hover:text-teal-400 hover:-translate-y-1 duration-500" />
-          <RxExternalLink className="hover:text-teal-400 hover:-translate-y-1 duration-500" />
+          <a href={gitHubLink} target="_blank">
+            <AiOutlineGithub className="hover:text-teal-400 hover:-translate-y-1 duration-500" />
+          </a>
+          {projectLink && (
+            <a href={projectLink} target="_blank">
+              <RxExternalLink className="hover:text-teal-400 hover:-translate-y-1 duration-500" />
+            </a>
+          )}
         </div>
       </div>
 
@@ -28,7 +50,7 @@ const SmallProjects = ({ description, gitHubLink, title, techUsed }) => {
       </div>
 
       {/* techused */}
-      <div className="absolute bottom-4 flex mx-auto justify-evenly flex-wrap gap-x-2">
+      <div className="absolute bottom-4 flex mx-auto justify-evenly flex-wrap gap-1">
         {techUsed.map((item) => {
           return (
             <div className="">

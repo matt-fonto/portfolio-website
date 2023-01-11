@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   // function to calculate the scroll
   const handleScroll = () => {
@@ -30,9 +30,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav
-        className={`md:flex md:items-center ${visible ? "nav" : "nav hidden"}`}
-      >
+      <nav className={`flex items-center ${visible ? "nav" : "nav hidden"}`}>
         {/* Logo */}
         <div className="w-1/2 text-2xl text-teal-300">
           <a href="/">

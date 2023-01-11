@@ -124,9 +124,9 @@ export const bigProjects = [
     techUsed: [
       "React",
       "Axios",
-      "MUI5",
-      "React Router",
-      "Netlify",
+      "CSS",
+      "TMDB API",
+      "Firebase",
       "Git",
       "GitHub",
     ],
@@ -139,28 +139,28 @@ export const smallProjects = [
     title: "Redux Cart",
     icon: <SiRedux />,
     description:
-      "A cart created with the objective of practicing Redux Toolkit.",
+      "A shopping cart built with React and Redux that lets you easily adjust item quantities, view real-time totals, and even clear the whole cart with a confirmation pop-up.",
     projectLink: "https://sage-dieffenbachia-472fb0.netlify.app/",
     gitHubLink: "https://github.com/softEngMatthew/redux-cart-project",
-    techUsed: ["React", "Axios", "MUI5", "React Router"],
+    techUsed: ["React", "Redux", "Netlify", "git"],
   },
   {
     id: "2",
     title: "Grocery List",
     icon: <MdLocalGroceryStore />,
     description:
-      "A grocery list built using React. The user can add to, edit, and delete items from the grocery list. The app stores data locally, so that the user can retrieve it after.",
+      "A sleek and user-friendly grocery list app built using React, allowing you to easily manage your shopping essentials. You can add new items, edit existing ones, and delete items you no longer need.",
     gitHubLink: "https://github.com/softEngMatthew/grocery-list",
-    techUsed: ["React", "Axios", "MUI5", "React Router"],
+    techUsed: ["React", "Local Storage"],
   },
   {
     id: "3",
     title: "To-Do App",
     icon: <BsCheckCircle />,
     description:
-      "A pretty straightforward To-Do app created with React Native and Expo.",
+      "A simple and intuitive To-Do app built with React Native and Expo, designed to help you stay organized and on top of your tasks. It can be run on multiple mobile platforms (iOS, Android)",
     gitHubLink: "https://github.com/softEngMatthew/to-do-app-react-native",
-    techUsed: ["React", "Axios", "MUI5", "React Router"],
+    techUsed: ["React Native", "Expo", "Android Studio"],
   },
 ];
 

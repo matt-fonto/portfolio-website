@@ -39,7 +39,7 @@ const BigProjects = (props) => {
           <img
             src={image}
             alt={title}
-            className="h-[50vh] w-full object-cover rounded opacity-50 hover:opacity-100 hover:-translate-y-2 duration-500"
+            className="h-[50vh] w-full object-cover rounded-lg border border-gray-600 shadow-md shadow-black opacity-50 hover:opacity-100 hover:-translate-y-2 duration-500"
           />
         </a>
 

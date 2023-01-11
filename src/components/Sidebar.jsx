@@ -1,19 +1,29 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 import { navlinks } from "../utils/constants";
 
 const Sidebar = () => {
-  const [burger, setBurger] = useState(true);
-  //   const toggleVisible = () => setVisible(!visible);
+  const [burger, setBurger] = useState(false);
 
   return (
-    <div>
-      <GiHamburgerMenu
-        className="focus:outline-none focus:shadow-outline-teal"
-        // onClick={toggleVisible}
-      />
-      <ul className="md:flex md:items-center gap-4 text-sm font-bitter tracking-wide">
+    // nav container
+    <div className="">
+      <div
+        onClick={() => setBurger(!burger)}
+        className="relative text-gray-300 text-2xl md:hidden hover:text-teal-300 duration-500"
+      >
+        {burger ? <AiOutlineClose /> : <GiHamburgerMenu />}
+      </div>
+      {/* links */}
+      <ul
+        className={`md:flex gap-x-4 md:items-center absolute md:static transition-all duration-500 ease-in ${
+          burger
+            ? "absolute top-20 flex flex-col align-middle pl-4 justify-evenly h-[40vh] w-1/4 rounded-md right-0 bg-[#111]"
+            : "-left-64"
+        }`}
+      >
         {navlinks.map((link) => {
           return (
             <li key={link.name}>

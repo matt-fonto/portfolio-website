@@ -47,7 +47,7 @@ export default function App() {
           <Navbar />
           <FixedMenus sendEmail={sendEmail} />
           {/* content */}
-          <div className="mx-[300px] text-gray-400 text-openSans">
+          <div className="mx-10 md:mx-[300px] text-gray-400 text-openSans">
             <Hero sendEmail={sendEmail} />
             <Portfolio />
             <Skills />

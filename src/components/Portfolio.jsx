@@ -44,7 +44,7 @@ const Portfolio = ({ animationType }) => {
         Other Relevant Projects
       </h2>
       {/* Small Projects */}
-      <div className="flex gap-6 h-[50vh] hover:translate-y-1">
+      <div className="flex gap-6 h-[50vh]">
         {smallProjects.map((project, index) => {
           return <SmallProjects {...project} key={project.id} index={index} />;
         })}
