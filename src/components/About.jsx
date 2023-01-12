@@ -7,16 +7,19 @@ const About = () => {
     <div className="flex flex-col gap-y-4" id="about">
       {/* // Header */}
       <div className="flex justify-evenly items-center">
-        <div className="w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
+        <div className="w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">04.</span>About Me
         </h3>
       </div>
 
       {/* Container Content + Picture */}
-      <div className="flex h-max items-start">
+      <div className="flex-col lg:flex-row flex h-max items-center md:items-start">
         {/* content */}
-        <div className="flex flex-col gap-y-4 w-1/2" data-aos="fade-up">
+        <div
+          className="flex flex-col gap-y-4 w-full lg:w-1/2"
+          data-aos="fade-up"
+        >
           {/* text */}
           <p className="text-md font-openSans text-gray-400">
             Hey, there!
@@ -46,7 +49,7 @@ const About = () => {
             {/* tech */}
             <div className="flex my-4">
               {/* Column 1 */}
-              <ul className="w-1/2">
+              <ul className="lg:w-1/2">
                 <li className="flex items-center gap-2">
                   <BiRightArrow className="text-xs text-teal-300" />
                   <p className="text-gray-400 font-bitter">
@@ -64,7 +67,7 @@ const About = () => {
               </ul>
 
               {/* Column 2 */}
-              <ul className="w-1/2">
+              <ul className="lg:w-1/2">
                 <li className="flex items-center gap-2">
                   <BiRightArrow className="text-xs text-teal-300" />
                   <p className="text-gray-400 font-bitter">REST APIs</p>
@@ -83,13 +86,13 @@ const About = () => {
         </div>
 
         {/* picture */}
-        <div className="flex justify-center h-[350px] items-center w-1/2">
+        <div className="flex justify-center h-[350px] items-center w-full lg:w-1/2">
           <div className="image-with-background relative">
             <a href="https://github.com/softEngMatthew" target="_blank">
               <img
                 src={MyPic}
                 alt=""
-                className="rounded-lg h-[250px] grayscale-[40%] hover:grayscale-0 duration-500 "
+                className="rounded-lg h-[250px] grayscale-[40%] hover:grayscale-0 duration-500 object-cover"
               />
             </a>
           </div>

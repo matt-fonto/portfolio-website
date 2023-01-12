@@ -36,18 +36,19 @@ export default function App() {
     <div className="min-h-screen bg-[#222]">
       {loading ? (
         <RingLoader
-          size={100}
-          color={"#36d7b7"}
-          loading={loading}
-          className="mx-auto my-auto top-[40vh] bg-[#222]"
+        // size={100}
+        // color={"#36d7b7"}
+        // loading={loading}
+        // className="mx-auto my-auto top-[40vh] bg-[#222]"
         />
       ) : (
         // * whole screen container
-        <main>
+        <main className="max-w-screen">
           <Navbar />
           <FixedMenus sendEmail={sendEmail} />
-          {/* content */}
-          <div className="mx-10 md:mx-[300px] text-gray-400 text-openSans">
+
+          {/* content  */}
+          <div className="px-[10px] md:px-[20px] lg:px-[300px] text-gray-400 text-openSans">
             <Hero sendEmail={sendEmail} />
             <Portfolio />
             <Skills />

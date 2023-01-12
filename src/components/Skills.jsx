@@ -19,7 +19,7 @@ const Skills = () => {
     <div className="flex flex-col mt-20" id="skills">
       {/* Header */}
       <div className="flex justify-evenly items-center">
-        <div className="w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
+        <div className="w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />{" "}
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">02.</span>Skills
         </h3>
@@ -40,7 +40,7 @@ const Skills = () => {
             Languages
           </h3>
         </div>
-        <div className="flex text-6xl gap-4 justify-evenly items-center h-[30vh]">
+        <div className="flex flex-wrap text-6xl gap-2 justify-evenly items-center h-[30vh]">
           {languageSkills.map((language) => {
             return (
               <div
@@ -86,7 +86,7 @@ const Skills = () => {
             </span>
           </h3>
         </div>
-        <div className="flex text-6xl gap-2 justify-between items-center h-[30vh]">
+        <div className="flex flex-wrap text-6xl gap-2 justify-evenly items-center h-[30vh]">
           {librarySkills.map((item) => {
             return (
               <div
@@ -131,7 +131,7 @@ const Skills = () => {
             & Platforms
           </h3>
         </div>
-        <div className="flex text-6xl gap-2 justify-between items-center h-[30vh]">
+        <div className="flex flex-wrap flex-2 text-6xl gap-2 justify-evenly items-center h-[30vh]">
           {toolsSkills.map((tool) => {
             return (
               <div

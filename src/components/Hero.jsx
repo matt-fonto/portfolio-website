@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 const Hero = ({ sendEmail }) => {
   return (
-    <div className="h-[100vh] flex flex-col justify-center align-middle items-center tracking-[2px] text-left">
+    <div className="w-full h-[100vh] flex flex-col justify-center align-middle items-center tracking-[2px] text-left">
       <div className="" data-aos="fade-up">
         <h2 className="text-lg text-teal-300 font-openSans tracking-[2px] mb-4">
           Hi, my name is

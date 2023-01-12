@@ -19,7 +19,7 @@ const Portfolio = ({ animationType }) => {
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">01.</span>Projects
         </h3>
-        <div className="w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
+        <div className="w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
       </div>
 
       {/* Subheadline */}
@@ -33,7 +33,11 @@ const Portfolio = ({ animationType }) => {
       <div className="flex flex-col">
         {bigProjects.map((project, index) => {
           return (
-            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              className="flex flex-col"
+            >
               <BigProjects {...project} key={project.id} index={index} />
             </div>
           );
@@ -44,7 +48,8 @@ const Portfolio = ({ animationType }) => {
         Other Relevant Projects
       </h2>
       {/* Small Projects */}
-      <div className="flex gap-6 h-[50vh]">
+      <div className="flex items-center flex-col lg:flex-row gap-y-2 lg:flex gap-6 lg:h-[50vh]">
+        {/* flex lg:flex-col justify-between gap-y-2 lg:gap-6 lg:h-[50vh] */}
         {smallProjects.map((project, index) => {
           return <SmallProjects {...project} key={project.id} index={index} />;
         })}

@@ -14,7 +14,7 @@ const SmallProjects = ({
   return (
     //   {/*container folders */}
     <div
-      className="h-[300px] w-[700px] bg-[#2a2929] rounded shadow-md p-5 duration-500 relative"
+      className="w-[70%] lg:h-[300px] lg:w-[700px] bg-[#2a2929] rounded shadow-md p-5 duration-500 relative"
       data-aos="fade-up"
     >
       {/* upper container - links */}
@@ -46,11 +46,13 @@ const SmallProjects = ({
         <h2 className="font-bitter text-gray-300 font-bold text-xl mb-2">
           {title}
         </h2>
-        <p className="font-openSans text-gray-400 font-md">{description}</p>
+        <p className="font-openSans text-gray-400 font-md mb-4 ">
+          {description}
+        </p>
       </div>
 
       {/* techused */}
-      <div className="absolute bottom-4 flex mx-auto justify-evenly flex-wrap gap-1">
+      <div className="lg:absolute bottom-4 flex mx-auto justify-evenly flex-wrap gap-1">
         {techUsed.map((item) => {
           return (
             <div className="">

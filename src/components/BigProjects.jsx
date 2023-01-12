@@ -18,7 +18,7 @@ const BigProjects = (props) => {
 
   return (
     // section container
-    <div className="flex flex-col scroll-smooth h-[70vh]">
+    <div className="flex flex-col h-[70vh]">
       {/* header container */}
       <div className={`${isEven ? "text-left" : "text-right"}`}>
         <h3 className="font-bitter text-md text-teal-300">Project</h3>
@@ -28,7 +28,7 @@ const BigProjects = (props) => {
         </h2>
       </div>
 
-      {/* image + description container*/}
+      {/* image + description container + tech used*/}
       <div
         className={`flex relative h-[50vh] ${
           isEven ? "flex-row-reverse" : "flex-row"
@@ -39,13 +39,13 @@ const BigProjects = (props) => {
           <img
             src={image}
             alt={title}
-            className="h-[50vh] w-full object-cover rounded-lg border border-gray-600 shadow-md shadow-black opacity-50 hover:opacity-100 hover:-translate-y-2 duration-500"
+            className="h-[50vh] w-full object-contain rounded-lg border border-gray-600 shadow-md shadow-black opacity-50 hover:opacity-100 hover:-translate-y-2 duration-500"
           />
         </a>
 
         {/* description container */}
         <div
-          className={`absolute h-max bg-[#2a2929] rounded w-[70vh] p-4 px-7 top-2 ${
+          className={`md:absolute sm:p-4 bg-[#2a2929] rounded w-full md:w-[50%] h-max p-4 px-7 top-2 ${
             isEven ? "left-0" : "right-0"
           } `}
         >
@@ -56,7 +56,9 @@ const BigProjects = (props) => {
         </div>
 
         {/* bottom part - Technology used and links */}
-        <div className={`absolute bottom-16 ${isEven ? "left-0" : "right-0"}`}>
+        <div
+          className={`lg:absolute bottom-16 ${isEven ? "left-0" : "right-0"}`}
+        >
           <div className="flex gap-x-2">
             {techUsed.map((item) => {
               return (

@@ -12,7 +12,7 @@ const Sidebar = () => {
     <div className="">
       <div
         onClick={() => setBurger(!burger)}
-        className="relative text-gray-300 text-2xl md:hidden hover:text-teal-300 duration-500"
+        className="w-full relative text-gray-300 text-2xl md:hidden hover:text-teal-300 duration-500"
       >
         {burger ? <AiOutlineClose /> : <GiHamburgerMenu />}
       </div>

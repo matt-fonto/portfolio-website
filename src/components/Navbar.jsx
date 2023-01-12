@@ -30,9 +30,13 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className={`flex items-center ${visible ? "nav" : "nav hidden"}`}>
+      <nav
+        className={`lg:flex justify-evenly items-center ${
+          visible ? "nav" : "nav hidden"
+        }`}
+      >
         {/* Logo */}
-        <div className="w-1/2 text-2xl text-teal-300">
+        <div className="lg:w-1/2 text-2xl text-teal-300">
           <a href="/">
             <HiOutlineCode />
           </a>

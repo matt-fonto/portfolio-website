@@ -11,7 +11,7 @@ const Experience = () => {
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">03.</span>Experience
         </h3>
-        <div className="w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
+        <div className="w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />{" "}
       </div>
 
       {/* Tabs */}

@@ -7,7 +7,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const FixedMenus = ({ sendEmail }) => {
   return (
-    <div className="block border-r border-gray-300 h-[300px] w-[150px] fixed top-[30vh] flex-col justify-center items-center gap-y-8">
+    <div className="invisible lg:visible border-r border-gray-300 lg:h-[300px] lg:w-[150px] lg:fixed top-[30vh] flex-col justify-center items-center gap-y-8">
       {/* left */}
       <div className="flex flex-col justify-evenly items-center h-full">
         <a href="https://github.com/softEngMatthew" target="_blank">
