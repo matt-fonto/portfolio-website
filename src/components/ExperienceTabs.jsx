@@ -10,7 +10,7 @@ const ExperienceTabs = () => {
   };
 
   return (
-    <div className="h-[70vh] lg:h-[500px] flex items-center lg:mx-[50px] lg:mx-20">
+    <div className="h-[70vh] lg:h-[500px] flex items-center lg:mx-[50px] console.log();:mx-20">
       {/*  */}
       <div className="flex">
         {/* Left Menu - Buttons */}

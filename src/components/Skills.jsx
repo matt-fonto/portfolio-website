@@ -131,7 +131,7 @@ const Skills = () => {
             & Platforms
           </h3>
         </div>
-        <div className="flex flex-wrap flex-2 text-6xl gap-2 justify-evenly items-center h-[30vh]">
+        <div className="flex flex-wrap text-6xl gap-2 justify-evenly items-center h-[30vh]">
           {toolsSkills.map((tool) => {
             return (
               <div
