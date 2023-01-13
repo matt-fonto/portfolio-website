@@ -57,7 +57,7 @@ export const navlinks = [
   {
     num: 3,
     name: "Experience",
-    to: "skills",
+    to: "experience",
   },
   {
     num: 4,
@@ -81,15 +81,7 @@ export const bigProjects = [
       "Developed a full-featured YouTube clone, including a dynamic homepage with categorization, search functionality, and recommendations based on the current videos. Implemented in-app video playback for a seamless user experience.",
     projectLink: "https://enchanting-sopapillas-14f13d.netlify.app/",
     gitHubLink: "https://github.com/softEngMatthew/youtube-clone",
-    techUsed: [
-      "React",
-      "Axios",
-      "MUI5",
-      "React Router",
-      "Netlify",
-      "Git",
-      "GitHub",
-    ],
+    techUsed: ["React", "Axios", "MUI5", "React Router", "Netlify"],
 
     // techUsed: "React, Axios, MUI5, React Router, Netlify, Git, GitHub",
   },
@@ -99,18 +91,10 @@ export const bigProjects = [
     icon: <BsSpotify />,
     image: SpotifyImage,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolores tempora doloremque? Laboriosam soluta delectus voluptates architecto veritatis est nobis nihil dolorem deleniti quaerat quidem iste commodi dolorum sunt ex error ipsa, beatae perferendis atque qui placeat! Dicta veniam eveniet voluptatum nesciunt sapiente quam, blanditiis eaque, a aliquid voluptatibus dolores.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis sunt eaque totam, consectetur, blanditiis doloribus temporibus repellendus assumenda asperiores rerum possimus placeat, dolorem sapiente cum doloremque impedit? In, unde!",
     projectLink: "in progress",
     gitHubLink: "in progress",
-    techUsed: [
-      "React",
-      "Axios",
-      "MUI5",
-      "React Router",
-      "Netlify",
-      "Git",
-      "GitHub",
-    ],
+    techUsed: ["React", "Axios", "MUI5", "React Router", "Netlify"],
   },
   {
     id: "3",
@@ -121,15 +105,7 @@ export const bigProjects = [
       "A Netflix clone featuring dynamic movie and TV show listings, a main header with popular content, and rows for Netflix originals, trending shows, top-rated options, and various categories. Utilized an API to fetch and display data in real time.",
     projectLink: "https://netflix-clone-8da19.web.app/",
     gitHubLink: "https://github.com/softEngMatthew/netflix-clone",
-    techUsed: [
-      "React",
-      "Axios",
-      "CSS",
-      "TMDB API",
-      "Firebase",
-      "Git",
-      "GitHub",
-    ],
+    techUsed: ["React", "Axios", "CSS", "TMDB API", "Firebase"],
   },
 ];
 
@@ -142,7 +118,7 @@ export const smallProjects = [
       "A shopping cart built with React and Redux that lets you easily adjust item quantities, view real-time totals, and even clear the whole cart with a confirmation pop-up.",
     projectLink: "https://sage-dieffenbachia-472fb0.netlify.app/",
     gitHubLink: "https://github.com/softEngMatthew/redux-cart-project",
-    techUsed: ["React", "Redux", "Netlify", "git"],
+    techUsed: ["React", "Redux", "Netlify"],
   },
   {
     id: "2",

@@ -10,11 +10,11 @@ const ExperienceTabs = () => {
   };
 
   return (
-    <div className="h-[70vh] lg:h-[500px] flex items-center lg:mx-[50px] console.log();:mx-20">
+    <div className="mt-10 md:mt-0 h-max md:w-full lg:h-[500px] flex items-center lg:mx-[50px] md:mx-20">
       {/*  */}
-      <div className="flex">
+      <div className="w-full md:w-full flex-col md:flex md:flex-row">
         {/* Left Menu - Buttons */}
-        <div className="flex-col w-1/5 rounded-md h-max relative">
+        <div className="flex flex-col w-full md:w-1/5 rounded-md h-max relative">
           {/* Line Decoration Buttons */}
           <div className="absolute bg-gray-300 h-full w-1 top-0" />
 
@@ -80,7 +80,7 @@ const ExperienceTabs = () => {
         </div>
 
         {/* Right Menu - Experience */}
-        <div className="flex-col w-4/5 h-[40vh]">
+        <div className="flex-col h-[40vh]">
           {/* Experience 1 */}
           <div
             className={`${

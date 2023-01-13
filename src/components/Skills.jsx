@@ -19,7 +19,7 @@ const Skills = () => {
     <div className="flex flex-col mt-20" id="skills">
       {/* Header */}
       <div className="flex justify-evenly items-center">
-        <div className="w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />{" "}
+        <div className="w-[100px] md:w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">02.</span>Skills
         </h3>

@@ -4,10 +4,10 @@ import MyPic from "../utils/resources/images/mypic.jpeg";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-y-4" id="about">
+    <div className="sm:mt-0 md:mt-8 lg:mt-0 flex flex-col gap-y-4" id="about">
       {/* // Header */}
       <div className="flex justify-evenly items-center">
-        <div className="w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
+        <div className="w-[100px] md:w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">04.</span>About Me
         </h3>

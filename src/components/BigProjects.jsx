@@ -18,7 +18,7 @@ const BigProjects = (props) => {
 
   return (
     // section container
-    <div className="flex flex-col lg:h-[70vh]">
+    <div className="md:w-[full] flex flex-col lg:h-[70vh]">
       {/* header container */}
       <div className={`${isEven ? "text-left" : "text-right"}`}>
         <h3 className="font-bitter text-md text-teal-300">Project</h3>
@@ -43,48 +43,51 @@ const BigProjects = (props) => {
           />
         </a>
 
-        {/* description container */}
+        {/* description + link = absolute/beside image */}
         <div
-          className={`md:absolute sm:p-4 bg-[#2a2929] rounded w-full md:w-[50%] h-max p-4 px-7 top-2 ${
+          className={`lg:absolute flex sm:p-4 bg-[#2a2929] rounded w-full lg:w-[50%] h-max p-4 px-7 top-2 ${
             isEven ? "left-0" : "right-0"
           } `}
         >
-          {/* description */}
-          <p className={`${isEven ? "text-left" : "text-right"} py-2`}>
-            {description}
-          </p>
-        </div>
+          {/* description container */}
+          <div>
+            {/* description */}
+            <p className={`${isEven ? "md:text-left" : "md:text-right"} py-2`}>
+              {description}
+            </p>
 
-        {/* bottom part - Technology used and links */}
-        <div
-          className={`block mt-4 md:flex lg:block items-center justify-evenly lg:absolute bottom-16 ${
-            isEven ? "left-0" : "right-0"
-          }`}
-        >
-          <div className="flex flex-wrap gap-2">
-            {techUsed.map((item) => {
-              return (
-                <p className="text-[#222] bg-gray-400 lowercase font-bitter rounded h-6 w-max p-2 text-sm flex items-center">
-                  {item}
-                </p>
-              );
-            })}
-          </div>
+            {/* icons */}
+            <div
+              className={`flex border-b pb-4 border-gray-500 text-3xl gap-4 mt-2 ${
+                isEven
+                  ? "justify-center lg:justify-start"
+                  : "justify-center lg:justify-end"
+              }`}
+            >
+              <a href={gitHubLink} target="_blank">
+                <AiOutlineGithub className="hover:text-teal-400 hover:-translate-y-1 duration-500" />
+              </a>
+              <a href={projectLink} target="_blank">
+                <RxExternalLink className="hover:text-teal-400 hover:-translate-y-1 duration-500" />
+              </a>
+            </div>
 
-          {/* icons */}
-          <div
-            className={`mt-8 flex items-center text-3xl gap-4 md:mt-4 ${
-              isEven
-                ? "justify-center md:justify-start"
-                : "justify-center md:justify-end"
-            }`}
-          >
-            <a href={gitHubLink} target="_blank">
-              <AiOutlineGithub className="hover:text-teal-400 hover:-translate-y-1 duration-500" />
-            </a>
-            <a href={projectLink} target="_blank">
-              <RxExternalLink className="hover:text-teal-400 hover:-translate-y-1 duration-500" />
-            </a>
+            {/* Tech Used */}
+            <div
+              className={`mt-4 flex ${
+                isEven ? "justify-start" : "justify-end"
+              }`}
+            >
+              <div className="flex flex-wrap gap-2">
+                {techUsed.map((item) => {
+                  return (
+                    <p className="text-gray-400 border border-gray-400 lowercase font-bitter rounded-lg h-6 w-max p-2 text-sm flex items-center">
+                      {item}
+                    </p>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>

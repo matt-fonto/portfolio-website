@@ -11,7 +11,7 @@ const Contact = ({ sendEmail }) => {
         <h3 className="font-bitter tracking-wider text-3xl font-bold">
           <span className="mr-2 text-teal-300">05.</span>What's Next?
         </h3>
-        <div className="w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />{" "}
+        <div className="w-[100px] md:w-[200px] lg:w-[50vh] h-[0.5px] bg-gray-200 ml-4" />
       </div>
 
       <h2 className="text-4xl font-bitter text-teal-300 font-bold">
