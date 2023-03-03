@@ -28,7 +28,7 @@ const Skills = () => {
       {/* languages */}
       <div className="relative">
         <div className="mb-10 ">
-          <div className="absolute w-[60px] h-[2px] bg-[#AB75EB] ml-4 -left-4 top-20 " />
+          <div className="absolute w-[60px] h-[2px] bg-[#AB75EB] ml-4 -left-4 top-20" />
           <h3 className="uppercase tracking-[5px] text-gray-400 text-1xl font-openSans font-medium text-left py-10">
             <span
               className={`${
@@ -60,7 +60,7 @@ const Skills = () => {
                 {/* language name - Hover */}
                 <div className="h-[60px] w-[40px] mx-auto flex justify-center">
                   {showName === language.id && (
-                    <p className="text-sm text-gray-500 tracking-[2px] uppercase mt-4 text-center font-openSans">
+                    <p className="text-sm text-gray-500 tracking-[2px] uppercase mt-4 text-center font-openSans font-bold">
                       {language.name}
                     </p>
                   )}
@@ -105,7 +105,7 @@ const Skills = () => {
                 {/* Libraries&Frameworks name - Hover */}
                 <div className="h-[60px] w-[40px] mx-auto flex justify-center">
                   {showName === item.id && (
-                    <p className="text-sm text-gray-500 uppercase tracking-[2px] mt-4 font-openSans text-center">
+                    <p className="text-sm text-gray-500 font-bold uppercase tracking-[2px] mt-4 font-openSans text-center">
                       {item.name}
                     </p>
                   )}
@@ -150,7 +150,7 @@ const Skills = () => {
                 {/* Tools&Platforms name - Hover */}
                 <div className="h-[60px] w-[40px] mx-auto flex justify-center">
                   {showName === tool.id && (
-                    <p className="text-sm text-gray-500 uppercase tracking-[2px] mt-4 font-openSans text-center">
+                    <p className="text-sm text-gray-500 font-bold uppercase tracking-[2px] mt-4 font-openSans text-center">
                       {tool.name}
                     </p>
                   )}

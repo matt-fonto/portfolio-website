@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="mt-20 md:mt-0 h-[80vh] md:h-[50vh] lg:h-max flex items-center flex-col"
+      className="mt-28 md:mt-0 h-[90vh] md:h-[50vh] lg:h-max flex items-center flex-col"
     >
       {/* Headline */}
       <div className="flex justify-evenly items-center">

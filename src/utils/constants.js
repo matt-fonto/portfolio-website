@@ -12,6 +12,7 @@ import {
   SiMiro,
   SiZapier,
   SiClickup,
+  SiMongodb,
 } from "react-icons/si";
 import { MdLocalGroceryStore } from "react-icons/md";
 import {
@@ -22,6 +23,7 @@ import {
   DiNodejs,
   DiGit,
   DiTrello,
+  DiJava,
 } from "react-icons/di";
 import {
   SiJavascript,
@@ -73,7 +75,25 @@ export const navlinks = [
 
 export const bigProjects = [
   {
-    id: "1",
+    id: "sty-clone",
+    title: "Spotify Clone",
+    icon: <BsSpotify />,
+    image: SpotifyImage,
+    description:
+      "This music app is built with React, Tailwind, Redux Toolkit, and RapidAPI to access a music library and retrieve song information, such as title, artist, and album details. The goal of this project is to provide an easy-to-use and visually appealing music streaming experience for users.",
+    projectLink: "https://symphonious-llama-c71fdb.netlify.app/",
+    gitHubLink: "https://github.com/softEngMatthew/spotify-clone",
+    techUsed: [
+      "React",
+      "Tailwind",
+      "Redux Toolkit",
+      "Rapid API",
+      "React Router",
+      "Netlify",
+    ],
+  },
+  {
+    id: "yts-clone",
     title: "Youtube Clone",
     icon: <AiFillYoutube />,
     image: YoutubeImage,
@@ -82,22 +102,9 @@ export const bigProjects = [
     projectLink: "https://enchanting-sopapillas-14f13d.netlify.app/",
     gitHubLink: "https://github.com/softEngMatthew/youtube-clone",
     techUsed: ["React", "Axios", "MUI5", "React Router", "Netlify"],
-
-    // techUsed: "React, Axios, MUI5, React Router, Netlify, Git, GitHub",
   },
   {
-    id: "2",
-    title: "Spotify Clone",
-    icon: <BsSpotify />,
-    image: SpotifyImage,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis sunt eaque totam, consectetur, blanditiis doloribus temporibus repellendus assumenda asperiores rerum possimus placeat, dolorem sapiente cum doloremque impedit? In, unde!",
-    projectLink: "in progress",
-    gitHubLink: "in progress",
-    techUsed: ["React", "Axios", "MUI5", "React Router", "Netlify"],
-  },
-  {
-    id: "3",
+    id: "nfx-clone",
     title: "Netflix Clone",
     icon: <SiNetflix />,
     image: NetflixImage,
@@ -147,6 +154,11 @@ export const languageSkills = [
     name: "Python",
   },
   {
+    id: "jv",
+    icon: <DiJava />,
+    name: "Java",
+  },
+  {
     id: "ts",
     icon: <SiTypescript />,
     name: "TypeScript",
@@ -183,7 +195,7 @@ export const librarySkills = [
   {
     id: "ex",
     icon: <SiExpress />,
-    name: "Express.js",
+    name: "Express",
   },
   {
     id: "rena",
@@ -199,6 +211,11 @@ export const librarySkills = [
     id: "red",
     icon: <SiRedux />,
     name: "Redux",
+  },
+  {
+    id: "mgdb",
+    icon: <SiMongodb />,
+    name: "Mongo",
   },
   {
     id: "rou",
