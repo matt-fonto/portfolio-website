@@ -24,10 +24,6 @@ const FixedMenus = ({ sendEmail }) => {
           <HiOutlineMail className="text-gray-300 text-3xl hover:text-teal-400 hover:-translate-y-1 duration-500" />
         </button>
 
-        <a href="https://www.instagram.com/_fontoura/" target="_blank">
-          <BsInstagram className="text-gray-300 text-2xl hover:text-teal-400 hover:-translate-y-1 duration-500" />
-        </a>
-
         {/* <div className="w-[1px] h-[150px] bg-gray-200" /> */}
       </div>
     </div>

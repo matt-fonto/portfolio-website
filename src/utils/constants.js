@@ -118,9 +118,31 @@ export const bigProjects = [
 
 export const smallProjects = [
   {
-    id: "1",
+    id: "bc",
+    title: "Buzzfeed Clone",
+    description:
+      "A Full Stack application created with React, TypeScript, Node.js, Tailwind, Firebase and Rest API",
+    gitHubLink: "https://github.com/softEngMatthew/buzzfeed-clone",
+    techUsed: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Tailwind",
+      "Firebase",
+      "REST API",
+    ],
+  },
+  // {
+  //   id: "jv",
+  //   title: "Buzzfeed Clone",
+  //   description:
+  //     "A shopping cart built with React and Redux that lets you easily adjust item quantities, view real-time totals, and even clear the whole cart with a confirmation pop-up.",
+  //   gitHubLink: "https://github.com/softEngMatthew/buzzfeed-clone",
+  //   techUsed: ["TypeScript", "Node.js", "Tailwind", "Firebase", "REST API"],
+  // },
+  {
+    id: "rc",
     title: "Redux Cart",
-    icon: <SiRedux />,
     description:
       "A shopping cart built with React and Redux that lets you easily adjust item quantities, view real-time totals, and even clear the whole cart with a confirmation pop-up.",
     projectLink: "https://sage-dieffenbachia-472fb0.netlify.app/",
@@ -128,18 +150,16 @@ export const smallProjects = [
     techUsed: ["React", "Redux", "Netlify"],
   },
   {
-    id: "2",
+    id: "gc",
     title: "Grocery List",
-    icon: <MdLocalGroceryStore />,
     description:
       "A sleek and user-friendly grocery list app built using React, allowing you to easily manage your shopping essentials. You can add new items, edit existing ones, and delete items you no longer need.",
     gitHubLink: "https://github.com/softEngMatthew/grocery-list",
     techUsed: ["React", "Local Storage"],
   },
   {
-    id: "3",
+    id: "toapp",
     title: "To-Do App",
-    icon: <BsCheckCircle />,
     description:
       "A simple and intuitive To-Do app built with React Native and Expo, designed to help you stay organized and on top of your tasks. It can be run on multiple mobile platforms (iOS, Android)",
     gitHubLink: "https://github.com/softEngMatthew/to-do-app-react-native",

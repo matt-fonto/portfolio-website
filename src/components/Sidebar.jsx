@@ -49,7 +49,12 @@ const Sidebar = ({ visible }) => {
             visible ? "h-[35px]" : "h-[30px]"
           }`}
         >
-          Resume
+          <a
+            href="https://drive.google.com/file/d/1MCyjB0PrqT8TdqQvy-863WzBhsmzGvGw/view?usp=share_link"
+            target="_blank"
+          >
+            Resume
+          </a>
         </button>
       </ul>
     </div>
